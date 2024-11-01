@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    /* width: 100%;
+    height: 100hv; */
+    flex-basis: 10;
+    background-color: rgb(26, 26, 179);
+    display: flex;
+
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profil h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.menu {
+    /* position: relative; */
+    background-color: rgba(175, 30, 30, 0.491);
+    height: 250vh;
+    width: 40px;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.menu:hover {
+    width: 200px;
+
+}
+
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+    width: 100%;
+
+}
+
+ul li a {
+    display: block;
+    /* //عشان احوش السطور الي تحت الكلام */
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 12px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    transition: .4s;
+}
+
+ul li a:hover,
+.active,
+.box-one:hover,
+.box-tow:hover,
+.box-three:hover,
+.box-fore:hover,
+.box-faif:hover {
+    background-color: black;
+}
+
+.out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+
+
+
+}
+
+.out a {
+    background-color: red;
+    border-radius: 10px;
+}
+
+ul li a i {
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+.title-bar,
+.title-pro {
+    display: flex;
+    /* width: 100%; */
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    /* justify-content: space-between; */
+    margin: 10px 0;
+    border-radius: 50px;
+    gap: 750px;
+}
+
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+
+.box-one,
+.box-tow,
+.box-three,
+.box-fore,
+.box-faif {
+    background-color: rgba(167, 113, 113, 0.512);
+    height: 150px;
+    flex-basis: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.boxs i {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td,
+th {
+    background-color: black;
+    color: beige;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(48, 140, 48, 0.316);
+
+}
+
+th {
+    background-color: black;
+}
+
+.count,
+.price {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.count {
+    background-color: rgba(255, 255, 0, 0.624);
+}
+
+.price {
+    background-color: green;
+}
